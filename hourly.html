@@ -41,7 +41,7 @@
                             </ul>
                             <p>In coding bootcamp, I didn't know how to squeeze a workout into my schedule. But then I realized: The P90 workouts were just a series of 1-minute exercises done in a row.</p>
                             <p>I created this simple single-page React/Redux app to get me physically moving both at the office, and in front of my bootcamp computer at home.</p>
-                            <h2><i>Insert Demo Video Here</i></h2>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SDIFpzhoRcg?autoplay=1&loop=1&playlist=SDIFpzhoRcg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
                             <p>This individual React project was created with Redux. </p>
                         </section>
 
@@ -112,5 +112,13 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            function stopRKey(evt) {
+              var evt = (evt) ? evt : ((event) ? event : null);
+              var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+              if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+            }	
+            document.onkeypress = stopRKey;
+        </script>    
 </body>
 </html>

@@ -108,6 +108,14 @@
 			<ul><li>&copy; Elijah Wilcott</li><li>Based on a Design from <a href="https://html5up.net" target="_blank">HTML5 UP</a></li></ul>
 		</div>
 	</div>
+<script type="text/javascript">
+	function stopRKey(evt) {
+		var evt = (evt) ? evt : ((event) ? event : null);
+		var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+		if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+	}	
+	document.onkeypress = stopRKey;
+</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>

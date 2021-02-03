@@ -36,15 +36,25 @@
 					<div class="image main"><img src="images/eat-at-home.png" alt="Eat@Home Screenshot" /></div>
 					<ul class="actions fit">
 						<li><a href="https://eat-at-home-server.herokuapp.com/" target="_blank" class="button fit">Live Site</a></li>
-						<li><a href="https://github.com/possumdiva/eat-at-home" target="_blank" class="button fit">Github Code</a></li>
+						<li><a href="https://github.com/possumdiva/eat-at-home" target="_blank" class="button fit">Github Frontend</a></li>
+						<li><a href="https://github.com/ejw773/eat-at-home-server" target="_blank" class="button fit">Github Backend</a></li>
 					</ul>
 					<p>Eat @ Home is an app for users who want a comprehensive list of meal and online grocery delivery services. Many of us are tired of trying to keep meals tasty and exciting and they want options so they don't have to cook every night and they don't have to run back and forth to the grocery store.</p>
-					<h2><i>Insert Video Demo Here</i></h2>
-					<p>This group project had the following contributors:</p>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/GOjAe28lppQ?autoplay=1&loop=1&playlist=GOjAe28lppQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+					<h4>This group project had the following contributors:</h4>
 					<ul>
 						<li>Stacey Graham - Database and Documentation</li>
 						<li>Heather Luttrell - Design / CSS</li>
 						<li>Elijah Wilcott - Backend and Deployment</li>
+					</ul>
+					<h4>Technologies:</h4>
+					<ul>
+						<li>HTML5/CSS3</li>
+						<li>React</li>
+						<li>Node</li>
+						<li>Passport</li>
+						<li>Postgres</li>
+						<li>Sequelize</li>
 					</ul>
 				</section>
 		</div>
@@ -114,5 +124,13 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript">
+	function stopRKey(evt) {
+	  var evt = (evt) ? evt : ((event) ? event : null);
+	  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+	  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+	}	
+	document.onkeypress = stopRKey;
+</script>
 </body>
 </html>
